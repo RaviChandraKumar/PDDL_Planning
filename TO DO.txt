@@ -1,0 +1,23 @@
+TO DO:
+
+design appropriate descriptions of facts, actions, and goals, using the PDDL language, for two planning problems
+
+
+
+Param 1:	 file containing definitions of actions.
+
+Param 2:	location of a text file containing definitions of facts about the environment, 
+			including objects (and types for those objects), 
+			general predicates that are always true, 
+			initial state description, and 
+			goal description
+
+
+Note that the preconds in each fact file will contain both 
+		statements that are always true in that domain
+		and statements that simply describe the initial state for that specific planning problem			
+
+
+create a separate text file that includes all the statements that must be present in ANY facts file for that domain.
+
+

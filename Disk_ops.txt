@@ -1,0 +1,36 @@
+
+(operator
+ move
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+ (preconds
+  (disk <x>) (disk <y>) (disk <z>) (on <x> <y>) (clear <x>) (clear <z>) (small <x> <y>) (small <x> <z>))
+ (effects
+  (on <x> <z>) (clear <y>) (del on <x> <y>) (del clear <z>)))
+
+(operator
+ movetoemptypeg
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+ (preconds
+  (disk <x>) (disk <y>) (on <x> <y>) (clear <x>) (small <x> <y>) (empty <z>))
+ (effects
+  (on <x> <z>) (del on <x> <y>)))
+
+(operator
+ movelastdiskonpegontoanotherdisk
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+ (preconds
+   (disk <x>) (disk <z>) (clear <x>) (clear <z>) (on <x> <y>) (small <x> <z>))
+ (effects
+  (on <x> <z>) (del clear <z>) (del on <x> <y>) (empty <y>)))
+
+(operator
+ movelastdiskononepegtoanotherpeg
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+ (preconds
+  (disk <x>) (clear <x>) (on <x> <y>) (empty <z>))
+ (effects
+  (on <x> <z>) (del on <x> <y>) (empty <y>)))
