@@ -1,36 +1,36 @@
 
 (operator
- move
+ moveDiskonOneDiskOnToAnotherDisk
  (params
-  (<x> Object) (<y> Object) (<z> Object))
+  (<x> DISK) (<y> DISK) (<z> DISK))
  (preconds
-  (disk <x>) (disk <y>) (disk <z>) (on <x> <y>) (clear <x>) (clear <z>) (small <x> <y>) (small <x> <z>))
+  (on <x> <y>) (clear <x>) (clear <z>) (small <x> <y>) (small <x> <z>))
  (effects
   (on <x> <z>) (clear <y>) (del on <x> <y>) (del clear <z>)))
 
 (operator
- movetoemptypeg
+ moveDiskOnOneDiskOnToEmptyPEG
  (params
-  (<x> Object) (<y> Object) (<z> Object))
+  (<x> DISK) (<y> DISK) (<z> PEG))
  (preconds
-  (disk <x>) (disk <y>) (on <x> <y>) (clear <x>) (small <x> <y>) (empty <z>))
+  (on <x> <y>) (clear <x>) (small <x> <y>) (empty <z>))
  (effects
-  (on <x> <z>) (del on <x> <y>)))
+  (on <x> <z>) (del empty <z>) (del on <x> <y>)))
 
 (operator
- movelastdiskonpegontoanotherdisk
+ moveLastDiskOnOnePEGOnToAnotherDisk
  (params
-  (<x> Object) (<y> Object) (<z> Object))
+  (<x> DISK) (<y> PEG) (<z> DISK))
  (preconds
-   (disk <x>) (disk <z>) (clear <x>) (clear <z>) (on <x> <y>) (small <x> <z>))
+   (on <x> <y>) (clear <x>) (clear <z>) (small <x> <z>))
  (effects
   (on <x> <z>) (del clear <z>) (del on <x> <y>) (empty <y>)))
 
 (operator
- movelastdiskononepegtoanotherpeg
+ moveLastDiskOnOnePEGToEmptyPEG
  (params
-  (<x> Object) (<y> Object) (<z> Object))
+  (<x> DISK) (<y> PEG) (<z> PEG))
  (preconds
-  (disk <x>) (clear <x>) (on <x> <y>) (empty <z>))
+  (on <x> <y>) (clear <x>) (empty <z>))
  (effects
-  (on <x> <z>) (del on <x> <y>) (empty <y>)))
+  (on <x> <z>) (del on <x> <y>) (empty <y>) (del empty <z>)))
