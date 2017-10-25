@@ -1,0 +1,9 @@
+
+(operator
+ moveDisK_x_from_to:
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+ (preconds
+  (on <x> <y>) (clear <x>) (clear <z>) (small <x> <y>) (small <x> <z>))
+ (effects
+  (on <x> <z>) (clear <y>) (del on <x> <y>) (del clear <z>)))
