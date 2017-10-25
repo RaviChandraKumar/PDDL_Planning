@@ -1,6 +1,6 @@
 
 (operator
- moveDisK_x_from_to:
+ moveDisk_x_from_to:
  (params
   (<x> Object) (<y> Object) (<z> Object))
  (preconds
