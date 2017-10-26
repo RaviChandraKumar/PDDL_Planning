@@ -23,4 +23,4 @@
 )
 
 (effects
- (clear b31) (at 7 b32))
+ (clear b21) (clear b32) (at 4 b31) (at 7 b33))
