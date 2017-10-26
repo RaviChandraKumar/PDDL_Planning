@@ -1,0 +1,9 @@
+
+(operator
+ move_number_x_from_to:
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+ (preconds
+  (at <x> <y>) (clear <z>) (adj <y> <z>))
+ (effects
+  (at <x> <z>) (clear <y>) (del clear <z>) (del at <x> <y>)))
