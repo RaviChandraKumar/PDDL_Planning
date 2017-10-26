@@ -1,0 +1,64 @@
+OUTPUT Fact1:
+=============
+
+time: 1, 33 facts and 6 exclusive pairs.
+time: 2, 36 facts and 17 exclusive pairs.
+Goals first reachable in 2 steps.
+172 nodes created.
+goals at time 3:
+  on_disk1_B on_disk2_C 
+
+1 moveDisk.x.from.to:_disk1_disk2_B
+2 moveDisk.x.from.to:_disk2_A_C
+0 entries in hash table, 
+1 total set-creation steps (entries + hits + plan length - 1).
+2 actions tried
+  0.00 secs
+
+solution to problem 1:
+======================
+
+1 moveDisk.x.from.to:_disk1_disk2_B
+2 moveDisk.x.from.to:_disk2_A_C
+
+
+solution to problem 2:
+======================
+
+1 moveDisk.x.from.to:_disk1_disk2_A
+2 moveDisk.x.from.to:_disk2_disk3_B
+3 moveDisk.x.from.to:_disk1_A_disk2
+4 moveDisk.x.from.to:_disk3_disk4_A
+5 moveDisk.x.from.to:_disk1_disk2_disk4
+6 moveDisk.x.from.to:_disk2_B_disk3
+7 moveDisk.x.from.to:_disk1_disk4_disk2
+8 moveDisk.x.from.to:_disk4_disk5_B
+9 moveDisk.x.from.to:_disk1_disk2_disk4
+10 moveDisk.x.from.to:_disk2_disk3_disk5
+11 moveDisk.x.from.to:_disk1_disk4_disk2
+12 moveDisk.x.from.to:_disk3_A_disk4
+13 moveDisk.x.from.to:_disk1_disk2_A
+14 moveDisk.x.from.to:_disk2_disk5_disk3
+15 moveDisk.x.from.to:_disk1_A_disk2
+16 moveDisk.x.from.to:_disk5_C_A
+17 moveDisk.x.from.to:_disk1_disk2_C
+18 moveDisk.x.from.to:_disk2_disk3_disk5
+19 moveDisk.x.from.to:_disk1_C_disk2
+20 moveDisk.x.from.to:_disk3_disk4_C
+21 moveDisk.x.from.to:_disk1_disk2_disk4
+22 moveDisk.x.from.to:_disk2_disk5_disk3
+23 moveDisk.x.from.to:_disk1_disk4_disk2
+24 moveDisk.x.from.to:_disk4_B_disk5
+25 moveDisk.x.from.to:_disk1_disk2_disk4
+26 moveDisk.x.from.to:_disk2_disk3_B
+27 moveDisk.x.from.to:_disk1_disk4_disk2
+28 moveDisk.x.from.to:_disk3_C_disk4
+29 moveDisk.x.from.to:_disk1_disk2_C
+30 moveDisk.x.from.to:_disk2_B_disk3
+31 moveDisk.x.from.to:_disk1_C_disk2
+
+89134 entries in hash table, 198777 hash hits, avg set size 20.
+287941 total set-creation steps (entries + hits + plan length - 1).
+226592 actions tried
+  3.61 secs
+
