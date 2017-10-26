@@ -16,10 +16,7 @@
 (7 Object)
 
 (preconds
-  (at 1 b11) (at 2 b12) (at 3 b13) (at 4 b21) (at 5 b22) (at 6 b23) (at 7 b31) (clear b32) (clear b33)
- (adj b11 b12) (adj b11 b21) (adj b12 b11) (adj b12 b13) (adj b12 b22) (adj b13 b12) (adj b13 b23)
- (adj b21 b11) (adj b21 b22) (adj b21 b31) (adj b22 b21) (adj b22 b12) (adj b22 b23) (adj b22 b32) (adj b23 b22) (adj b23 b13) (adj b23 b33)
- (adj b31 b32) (adj b31 b21) (adj b32 b31) (adj b32 b33) (adj b12 b22) (adj b33 b32) (adj b33 b23)
+ (at 1 b11) (at 2 b12) (at 3 b13) (at 4 b21) (at 5 b22) (at 6 b23) (at 7 b31) (clear b32) (clear b33) (adj b11 b12) (adj b11 b21) (adj b12 b11) (adj b12 b13) (adj b12 b22) (adj b13 b12) (adj b13 b23) (adj b21 b11) (adj b21 b22) (adj b21 b31) (adj b22 b21) (adj b22 b12) (adj b22 b23) (adj b22 b32) (adj b23 b22) (adj b23 b13) (adj b23 b33) (adj b31 b32) (adj b31 b21) (adj b32 b31) (adj b32 b33) (adj b12 b22) (adj b33 b32) (adj b33 b23)
 )
 
 (effects
