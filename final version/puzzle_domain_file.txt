@@ -1,0 +1,4 @@
+(adj b11 b12) (adj b11 b21) (adj b12 b11) (adj b12 b13) (adj b12 b22) (adj b13 b12) (adj b13 b23) 
+(adj b21 b11) (adj b21 b22) (adj b21 b31) (adj b22 b21) (adj b22 b12) (adj b22 b23) (adj b22 b32) (adj b23 b22) (adj b23 b13) (adj b23 b33) 
+(adj b31 b32) (adj b31 b21) (adj b32 b31) (adj b32 b33) (adj b12 b22) (adj b33 b32) (adj b33 b23)
+
